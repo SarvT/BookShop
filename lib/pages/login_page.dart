@@ -11,7 +11,9 @@ class LoginApp extends StatelessWidget {
         style: TextStyle(
           fontSize: 26,
           color: Colors.amberAccent
-        ),)
+        ),
+        textScaleFactor: 2.0,
+        )
         ),
     );
   }

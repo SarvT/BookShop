@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.dark,
       theme: ThemeData(brightness: Brightness.dark, primarySwatch: Colors.lime),
+    initialRoute: "/login",  
       routes: {
         "/": (context) => const LoginApp(),
         "/login": (context) => const LoginApp(),
