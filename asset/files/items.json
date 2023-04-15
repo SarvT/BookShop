@@ -1,0 +1,44 @@
+{
+    "products": [
+  {
+    "id":3276, 
+  "name":"Walverito", 
+  "desc":"a big creamy sausage walta", 
+  "price": 4501, 
+  "color": "#33505a", 
+  "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skymetweather.com%2Fgallery%2Ftoplists%2FTop-Not-to-miss-food-items-in-Monsoon%2F&psig=AOvVaw10cpSGWAwlHAw4dsqfTg0b&ust=1677773711586000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLj3666Qu_0CFQAAAAAdAAAAABAE"
+  },
+  {
+    "id":6376, 
+  "name":"Salverito", 
+  "desc":"a big creamy sausage walta", 
+  "price": 4011, 
+  "color": "#11505a", 
+  "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skymetweather.com%2Fgallery%2Ftoplists%2FTop-Not-to-miss-food-items-in-Monsoon%2F&psig=AOvVaw10cpSGWAwlHAw4dsqfTg0b&ust=1677773711586000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLj3666Qu_0CFQAAAAAdAAAAABAE"
+  },
+  {
+    "id":3376, 
+  "name":"Lalverito", 
+  "desc":"a big creamy sausage walta", 
+  "price": 3150, 
+  "color": "#34505a", 
+  "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skymetweather.com%2Fgallery%2Ftoplists%2FTop-Not-to-miss-food-items-in-Monsoon%2F&psig=AOvVaw10cpSGWAwlHAw4dsqfTg0b&ust=1677773711586000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLj3666Qu_0CFQAAAAAdAAAAABAE"
+  },
+  {
+    "id":1376, 
+  "name":"Palverito", 
+  "desc":"a big creamy sausage walta", 
+  "price": 1450, 
+  "color": "#32305a", 
+  "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skymetweather.com%2Fgallery%2Ftoplists%2FTop-Not-to-miss-food-items-in-Monsoon%2F&psig=AOvVaw10cpSGWAwlHAw4dsqfTg0b&ust=1677773711586000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLj3666Qu_0CFQAAAAAdAAAAABAE"
+  },
+  {
+    "id":5376, 
+  "name":"Malverito", 
+  "desc":"a big creamy sausage walta", 
+  "price": 4150, 
+  "color": "#33578a", 
+  "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skymetweather.com%2Fgallery%2Ftoplists%2FTop-Not-to-miss-food-items-in-Monsoon%2F&psig=AOvVaw10cpSGWAwlHAw4dsqfTg0b&ust=1677773711586000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLj3666Qu_0CFQAAAAAdAAAAABAE"
+  }
+]
+}
