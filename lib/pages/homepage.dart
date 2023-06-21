@@ -3,8 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:oneflut/models/items.dart';
-import 'package:oneflut/widgets/drawer.dart';
-import 'package:oneflut/widgets/item_widget.dart';
 import 'package:oneflut/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -87,9 +85,10 @@ class _HomeAppState extends State<HomeApp> {
     //         : const Center(
     //             child: CircularProgressIndicator(),
     //           )),
-    // drawer: const MyDrawer(),
+    // drawer: const MyDrawer()
 
     return Scaffold(
+      backgroundColor: Colors.amber,
         body: SafeArea(
       child: Container(
         padding: Vx.m32,
@@ -98,7 +97,7 @@ class _HomeAppState extends State<HomeApp> {
           children: [
             CatalogueHeader(),
             if (CatalogueModel.items != null && CatalogueModel.items.isNotEmpty)
-              Expanded(child: CatalogueList())
+              CatalogueList().expand()
             else
               Center(
                 child: CircularProgressIndicator(),
@@ -119,7 +118,7 @@ class CatalogueHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         "Mr.Store".text.xl5.bold.color(MyTheme.darkBluishColor).make(),
-        Text("Mr.Store"),
+        "Trending products".text.xl2.make(),
       ],
     );
   }
@@ -132,18 +131,18 @@ class CatalogueList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
+      itemCount: CatalogueModel.items.length,
       itemBuilder: (context, index) {
         final catalog = CatalogueModel.items[index];
         return CatalogueItem(catalog: catalog);
       },
-      itemCount: CatalogueModel.items.length,
     );
   }
 }
 
 class CatalogueItem extends StatelessWidget {
-  final catalog;
-  CatalogueItem({Key? key, @required this.catalog})
+  final Item catalog;
+  CatalogueItem({Key? key, required this.catalog})
       : assert(catalog != null),
         super(key: key);
 // final Item catalog = catalog;
@@ -153,8 +152,10 @@ class CatalogueItem extends StatelessWidget {
     // var catalog;
     return VxBox(
         child: Row(
-      children: [Image.network(catalog.Image)],
-    )).white.roundedLg.square(100).make().py16();
+      children: [Image.network(catalog.img).box.rounded.p16.make().p16().w40(context)],
+    ),
+    ).white.roundedLg.square(150).make().py16();
   }
-
 }
+
+// 5.14
