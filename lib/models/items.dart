@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 
 class CatalogueModel {
   static List<Item> items = [
