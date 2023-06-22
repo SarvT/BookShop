@@ -15,11 +15,11 @@ class HomeDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: MyTheme.lilBlue,
+        // backgroundColor: MyTheme.lilBlue,
         title: catalog.name.text.make(),
       ),
       bottomNavigationBar: Container(
-        color: MyTheme.lilBlue,
+        // color: MyTheme.lilBlue,
         child: ButtonBar(
                   alignment: MainAxisAlignment.spaceBetween,
                   buttonPadding: EdgeInsets.zero,
@@ -39,7 +39,7 @@ class HomeDetails extends StatelessWidget {
                 
         ).p32(),
       ),
-      backgroundColor: Colors.white70,
+      // backgroundColor: Colors.white70,
       body: SafeArea(
         bottom: false,
           child: Column( 
