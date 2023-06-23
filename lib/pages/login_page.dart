@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/widgets.dart';
 import 'package:oneflut/utils/routes.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 // underscore before a name is private in flutter
 
@@ -34,7 +35,7 @@ class _LoginAppState extends State<LoginApp> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.lightBlue,
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -52,7 +53,6 @@ class _LoginAppState extends State<LoginApp> {
               Text(
                 "Welcome $name",
                 style: const TextStyle(
-                  color: Colors.black,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -100,7 +100,7 @@ class _LoginAppState extends State<LoginApp> {
                   ),
 
                   Material(
-                    color: Colors.deepPurple,
+                    color: context.canvasColor,
                     borderRadius: BorderRadius.circular(changeBtn ? 50 : 6),
                     child: InkWell(
                       onTap: () => moveToHome(context),
@@ -114,13 +114,7 @@ class _LoginAppState extends State<LoginApp> {
                                 Icons.done,
                                 color: Colors.white,
                               )
-                            : const Text(
-                                "Submit",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                            : "Submit".text.make(),
                         // decoration: BoxDecoration(
                         //     color: Colors.deepPurpleAccent,
                         // )

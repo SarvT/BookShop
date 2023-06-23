@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oneflut/pages/cart.dart';
 import 'package:oneflut/pages/homepage.dart';
 import 'package:oneflut/pages/login_page.dart';
 import 'package:oneflut/utils/routes.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
     
 
     return MaterialApp(
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
 
@@ -52,10 +53,11 @@ class MyApp extends StatelessWidget {
 
 
     debugShowCheckedModeBanner: false, // hides debug bannner
-    initialRoute: "/home",  
+    initialRoute: MyRoutes.homeRoute,  
       routes: {
         MyRoutes.homeRoute: (context) => const HomeApp(),
         MyRoutes.loginRoute: (context) => const LoginApp(),
+        MyRoutes.cartRoute: (context) =>  CartApp(),
       },
     );
   }

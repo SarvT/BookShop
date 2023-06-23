@@ -36,7 +36,7 @@ class CatalogueItem extends StatelessWidget {
                   "\$${catalog.price}".text.bold.xl.make(),
                   ElevatedButton(
                     onPressed: () {}, 
-                    child: "Buy".text.make(),
+                    child: "Add to cart".text.make(),
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all(
                         const StadiumBorder()
@@ -49,6 +49,6 @@ class CatalogueItem extends StatelessWidget {
           ))
         ],
       ),
-    ).white.roundedLg.square(150).make().py16();
+    ).color(context.accentColor).roundedLg.square(150).make().py16();
   }
 }

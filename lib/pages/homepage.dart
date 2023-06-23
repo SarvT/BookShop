@@ -1,7 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:oneflut/utils/routes.dart';
 import 'package:oneflut/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../pages/homeWidgets/CatalogueHeader.dart';
@@ -90,7 +92,16 @@ class _HomeAppState extends State<HomeApp> {
     // drawer: const MyDrawer()
 
     return Scaffold(
-        backgroundColor: MyTheme.lilWhite,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: context.canvasColor,
+        onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+      child: Icon(
+        CupertinoIcons.cart
+      ),
+      ),
+        backgroundColor: context.canvasColor,
+        
+        // Theme.of(context.canvasColor)
         body: SafeArea(
           child: Container(
             padding: Vx.m32,
@@ -108,4 +119,4 @@ class _HomeAppState extends State<HomeApp> {
         ));
   }
 }
-// 5.14
+// 6.16
